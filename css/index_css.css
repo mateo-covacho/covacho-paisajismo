@@ -1,0 +1,192 @@
+* {
+    font-weight: 75;
+}
+
+a {
+    text-decoration: none; 
+}
+
+a:visited {
+    text-decoration: none; 
+
+}
+
+body {
+    background-color:white;
+    background-image: url(../img/other/SELLOCOVACHO-1.png);
+    text-align:center;
+    background-size: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.spread {
+    height: 5vh;
+}
+
+a {
+    color: black  ;
+}
+
+a:visited {
+    color: black ;
+}
+
+.title_container {
+    background: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: top 500;
+    height: 10vh;
+    line-height: 10vh;
+}
+
+.titulo_edu {
+    float:center;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.boton_Obra-Terminada_container {
+    background: rgba(255, 255, 255, 0.7);
+    text-align: right;
+    position:flex;
+    float: left;
+    width: 40vw;
+    padding-right: 5vw;
+
+    
+}
+
+.texto_boton {
+    font-size: 2.5vw !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: auto;
+    font-size: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: center;
+    float: right;
+    height: 15vw;
+    align-items: center;
+    height: auto;
+    left: 30vw;
+    width: 15vw;
+
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.ante-projectos, .Obra-Terminada, .quien-soy{
+    height: 33%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: block;
+    text-align: center !important;
+    padding: 1vw;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+.ante-projectos:hover, .Obra-Terminada:hover, .quien-soy:hover {
+    cursor: pointer;
+    background-color: rgba(201, 201, 201, 0.7);
+}
+
+.ante-projectos:hover .texto_boton_dropdown, .Obra-Terminada:hover .texto_boton_dropdown, .quien-soy:hover .texto_boton_dropdown {
+    font-weight: 300;
+    
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+.boton_microjardines {
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: left;
+    position:flex;
+    float: right;
+    width: 40vw;
+    padding-left: 5vw;
+
+}
+
+.dropdown2-content{
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: center;
+    float: left;
+    height: 15vw;
+    align-items: center;
+    height: auto;
+    right: 30vw;
+    width: 15vw;
+}
+
+.dropdown2:hover .dropdown2-content {
+    display: block;
+}
+
+.proceso, .catalogo {
+    height: 33%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: block;
+    text-align: center !important;
+    padding: 1vw;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+.proceso:hover, .catalogo:hover {
+    cursor: pointer;
+    background-color: rgba(201, 201, 201, 0.7);
+}
+.proceso:hover .texto_boton_dropdown, .catalogo:hover .texto_boton_dropdown {
+    font-weight: 300;
+
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.spread-2{
+    height: 20vh;
+}
+
+.spread-3 {
+    height: 50vh;
+}
+.barra-redes {
+    background: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    height: 5vh;
+    line-height: 5vh;
+}
+
+.emails {
+    float: left;
+    display: inline-flex;
+    padding-left: 5%;
+}
+.telf {
+    float: right;
+    display: inline-flex;
+    padding-right: 5%;
+
+}
+
+.social-media-img {
+    max-width:100%;
+    max-height:100%;
+}
