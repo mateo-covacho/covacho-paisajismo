@@ -10,14 +10,18 @@
 
         /* Slideshow container */
         .slideshow-container {
-            width: auto !important;
-        position: relative;
-        margin: auto;
+            position: relative;
+            margin: 0;
+            width: auto;
+            display:inline-block;
+
+
         }
 
         /* Hide the images by default */
         .mySlides {
-        display: none;
+            display: none;
+            width: auto;
         }
 
         /* Next & previous buttons */
@@ -34,6 +38,7 @@
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
         user-select: none;
+        width: auto;
         }
 
         /* Position the "next button" to the right */
@@ -89,10 +94,11 @@
         -webkit-animation-duration: 1.5s;
         animation-name: fade;
         animation-duration: 1.5s;
+        width: auto;
+
         }
 
         .slide-show-img {
-
         }
 
         .prev {
@@ -100,7 +106,7 @@
         }
         
         .next {
-            left: 100%;
+            right: 0%;
         }
 
         @-webkit-keyframes fade {
@@ -128,7 +134,7 @@
         for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "");
         }
-        slides[slideIndex-1].style.display = "block";
+        slides[slideIndex-1].style.display = "inline-block";
         dots[slideIndex-1].className += " active";
         }
 
@@ -189,65 +195,49 @@
 
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
-            <div class="numbertext">1 / 9</div>
             <img class="slide-show-img" src="Los Jardines de la Virgen, Linares/1.jpg" style="height: 80vh;">
-            <div class="text">Caption Text</div>
         </div>
       
         <div class="mySlides fade">
-            <div class="numbertext">2 / 9</div>
             <img class="slide-show-img" src="Los Jardines de la Virgen, Linares/2.jpg" style="height: 80vh;">
-            <div class="text">Caption Two</div>
         </div>
       
         <div class="mySlides fade">
-            <div class="numbertext">3 / 9</div>
             <img class="slide-show-img" src="Los Jardines de la Virgen, Linares/3.jpg" style="height: 80vh;">
-            <div class="text">Caption Three</div>
         </div>
         
         <div class="mySlides fade">
-            <div class="numbertext">4 / 9</div>
             <img class="slide-show-img" src="Los Jardines de la Virgen, Linares/4.jpg" style="height: 80vh;">
-            <div class="text">Caption Three</div>
         </div>
           
         <div class="mySlides fade">
-            <div class="numbertext">5 / 9</div>
             <img class="slide-show-img" src="Los Jardines de la Virgen, Linares/5.jpg" style="height: 80vh;">
-            <div class="text">Caption Three</div>
         </div>
         
         <div class="mySlides fade">
-            <div class="numbertext">6 / 9</div>
             <img class="slide-show-img" src="Los Jardines de la Virgen, Linares/6.jpg" style="height: 80vh;">
-            <div class="text">Caption Three</div>
         </div>
 
         <div class="mySlides fade">
-            <div class="numbertext">7 / 9</div>
             <img class="slide-show-img" src="Los Jardines de la Virgen, Linares/IMG_2132.JPG" style="height: 80vh;">
-            <div class="text">Caption Three</div>
         </div>
 
                 
         <div class="mySlides fade">
-            <div class="numbertext">8 / 9</div>
             <img class="slide-show-img" src="Los Jardines de la Virgen, Linares/IMG_2134.JPG" style="height: 80vh;">
-            <div class="text">Caption Three</div>
         </div>
 
                 
         <div class="mySlides fade">
-            <div class="numbertext">9 / 9</div>
             <img class="slide-show-img" src="Los Jardines de la Virgen, Linares/IMG_2135.JPG" style="height: 80vh;">
-            <div class="text">Caption Three</div>
         </div>
 
         <!-- Next and previous buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
+
+
       <br>
       
       <!-- The dots/circles -->
