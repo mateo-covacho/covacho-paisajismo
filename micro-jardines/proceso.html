@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+        }
+
+        a {
+            text-decoration: none; 
+            color: black;
+        }
+
+        a:visited {
+            text-decoration: none; 
+
+        }
+
+        body {
+            background-color:white;
+            background-image: url(../img/other/SELLOCOVACHO-1.png);
+            text-align:center;
+            background-size: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            align-content: center;
+        }
+
+        h1 {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .text-container {
+            width: 40vw;
+            background-color: rgba(255, 255, 255, 1);
+            margin: 0 ;
+            font-size: 20px;
+            margin-left: 10vw;
+            padding: 1vw;
+
+
+            
+        }
+
+        p {
+
+        }
+
+        .text-img {
+            max-height: 30vw;
+            float: right;
+            display:table-cell;
+            position:;
+            padding: 1vw;
+            top: 5vw;
+            right: 5vw;
+        }
+
+    
+    </style>
+    <style>
+        * {box-sizing:border-box}
+
+        /* Slideshow container */
+        .slideshow-container {
+            position: relative;
+            margin: 0;
+            width: auto;
+            display:inline-block;
+
+
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+            display: none;
+            width: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        width: auto;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Caption text */
+        .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+        background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+        width: auto;
+
+        }
+
+        .slide-show-img {
+        }
+
+        .prev {
+            left: 0%;
+        }
+        
+        .next {
+            right: 0%;
+        }
+
+        @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+        }
+
+        @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+        }
+    </style>
+    <script>
+        var slideIndex = 1;
+
+        function showSlides(n) {
+        var i;
+            var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "inline-block";
+            dots[slideIndex-1].className += " active";
+        }
+
+        window.onload = function() {
+            currentSlide(1)
+            console.log("Set slide show 1")
+        }
+
+        showSlides(slideIndex);
+
+
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        
+    </script>
+</head>
+<body>
+    <h1>El proceso</h1>
+
+    <div>
+        <div class="text-container">
+            <p>Todo empieza con un árbol en la orilla de un río. Por algún motivo este cae a la corriente y es arrastrado. Puede que se enganche en la orilla y allí pase algún tiempo. Con la crecida es empujado y se desgaja, una de las partes sigue su camino al mar pero queda retenido en unas piedras. Años después alguien pasa y empuja esa madera para ver como sigue su camino corriente abajo. Hay que esperar a una nueva riada para que finalmente llegue al mar. Navega varias millas arrastrado por una fuerte marejada, pasa varios meses a la deriva y finalmente una ola lo deja en la orilla. Semienterrado queda por varios años recibiendo el batir de las olas y solo con un fuerte temporal de levante es empujado arena adentro. Hace mucho que perdió su corteza, el tiempo y los elementos han moldeado su forma roma, suave, gastada. Es una madera de deriva.</p>
+            <p>Siempre me ha fascinado la acción del tiempo y los elementos sobre los materiales y como estos reflejan en sus formas y texturas, como en una fotografía,  la escala del tiempo.  </p>
+            <p>Visitando una exposición de orquídeas observaba como sus raíces envuelven el árbol al que se sujetan y tuve de nuevo esa sensación de ser testigo del paso del tiempo. 
+            Fue entonces cuando decidí unir ambas visiones</p>
+            <p>Paseo por las playa cerca de la desembocadura  de un río y selecciono las maderas de deriva con formas mas interesantes, curiosas o dramáticas. Una vez en casa las limpio a alta presión para eliminar restos blandos, tierras… Para unas veo su posición final desde el principio, otras pasan días o semanas en el taller, las miro, las giro y las doy vuelta hasta que veo su postura en un equilibrio improbable. </p>
+            <p>En ocasiones la propia pieza tiene los huecos para las plantas, otras veces se los hago pero siempre han de contar con un drenaje generoso. La pieza esta lista para recibir a las plantas.</p>
+            <p>Todas las planta que utilizo en los micro jardines son epífitas, es decir que en su estado natural viven sujetas a ramas de arboles, generalmente en bosque húmedos tropicales. Orquideas, bromelias, tillandsias.. son las especies base que utilizo aunque a veces puedo usar otras plantas  a modo de experimento. </p>
+            <p>Cada planta se ubica buscando potenciar la forma de la madera, con un sentido estético pero que encaje con la posición que podría tener la planta de forma natural. 
+            Una vez ubicadas pasaran en mi invernadero por lo menos 6 meses para comprobar que la planta esta a gusto en su nueva ubicación. </p> 
+            <p>Madera muerta, abandonada, mostrando sus arrugas y cicatrices que son ahora lugar de enraizamiento de nueva vida. Plantas, que descubren el motivo de su forma y crecen, florecen y crían, raíces que se enroscan y abrazan a la madera y se mezclan con esta. </p>
+            <p>Cada microjardín es una pieza única e irrepetible,  testigo del paso del tiempo, de su acción inexorable y del ciclo de la vida. </p>
+        </div>
+
+        <div class="imgs">
+            <img class="text-img"src="/micro-jardines/Microjardines/El_proceso/1.jpeg"  alt="dsa">
+            
+            <img class="text-img" id="2" src="/micro-jardines/Microjardines/El_proceso/2.jpeg"  alt="dsa">
+            
+        </div>
+    </div>
+
+    </body>
+</html>
+!
