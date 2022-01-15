@@ -80,7 +80,7 @@ a:visited {
 
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content, .dropdown: .dropdown-content  {
     display: block;
 }
 
