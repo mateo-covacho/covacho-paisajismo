@@ -75,12 +75,12 @@ a:visited {
     align-items: center;
     height: auto;
     left: 30vw;
-    width: 15vw;
+    width: auto;
 
 
 }
 
-.dropdown:hover .dropdown-content, .dropdown: .dropdown-content  {
+.dropdown:hover .dropdown-content  {
     display: block;
 }
 
@@ -98,6 +98,10 @@ a:visited {
 .ante-projectos:hover, .Obra-Terminada:hover, .quien-soy:hover {
     cursor: pointer;
     background-color: rgba(201, 201, 201, 0.7);
+}
+
+.texto_boton_dropdown {
+    font-size: 2vh;
 }
 
 .ante-projectos:hover .texto_boton_dropdown, .Obra-Terminada:hover .texto_boton_dropdown, .quien-soy:hover .texto_boton_dropdown {
@@ -128,8 +132,8 @@ a:visited {
     height: 15vw;
     align-items: center;
     height: auto;
-    right: 30vw;
-    width: 15vw;
+    right: 35vw;
+    width: auto;
 }
 
 .dropdown2:hover .dropdown2-content {
