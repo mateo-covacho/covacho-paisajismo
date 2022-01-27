@@ -1,0 +1,327 @@
+!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+    html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+.preview {
+    width: 100%;
+}
+
+.row {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+.row>.col {
+    padding: 0 8px;
+}
+
+.col {
+    margin-bottom: 1%;
+    float: left;
+    width: 33.33%;
+    z-index: 100;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding: 1vw;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow:auto;
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 0 0 0 0;
+    margin-right: 4vh;
+    width: 80%;
+    border: 5px solid;
+    border-color: white;
+    padding: 10px 10px 5px 10px;
+    width: 90vw;
+    height: 100vh;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.image-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.modal-preview {
+    width: 100%;
+}
+
+.dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+img.preview,
+img.modal-preview {
+    opacity: 1;
+}
+
+img.active {
+    opacity: 0.6;
+}
+
+.preview:hover,
+.modal-preview:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5), 0 9px 20px 0 rgba(0, 0, 0, 1);
+}
+/* Content */
+
+.content {
+    border: 5px solid;
+    border-color: black;
+    background-color: white;
+    padding: 10px;
+}
+
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.previous,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 2%;
+    border-radius: 3px 0 0 3px;
+}
+
+.previous:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 1050px) {
+    .col {
+        width: 50%;
+    }
+    .modal {
+        padding: 30px 32px 0px 32px;
+    }
+    .modal-content {
+        margin-top: 100px;
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .modal {
+        padding: 30px 10px 0px 10px;
+    }
+}
+</style>
+
+<script>
+    let slideIndex = 1;
+showSlide(slideIndex);
+
+function openLightbox() {
+    document.getElementById('Lightbox').style.display = 'block';
+};
+
+function closeLightbox() {
+    document.getElementById('Lightbox').style.display = 'none';
+};
+
+function changeSlide(n) {
+    showSlide(slideIndex += n);
+};
+
+function toSlide(n) {
+    showSlide(slideIndex = n);
+};
+
+function showSlide(n) {
+    const slides = document.getElementsByClassName('slide');
+    let modalPreviews = document.getElementsByClassName('modal-preview');
+
+    if (n > slides.length) {
+        slideIndex = 1;
+    };
+
+    if (n < 1) {
+        slideIndex = slides.length;
+    };
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    };
+
+    for (let i = 0; i < modalPreviews.length; i++) {
+        modalPreviews[i].className = modalPreviews[i].className.replace(' active', '');
+    };
+
+    slides[slideIndex - 1].style.display = 'block';
+    modalPreviews[slideIndex - 1].className += ' active';
+};
+</script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col">
+            <div class="content">
+                <img src="thumnails/1Intervencion paisajistica en zona residencial El Polvorín, Las palmas de gran Canaria. Octubre 2010-thumnail.jpg" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="content">
+                <img src="thumnails/2 plantacion en Bulevar Mesa y Lopez. Las palmas de Gran canaria. Marzo 2021-thumnail.jpg" onclick="openLightbox();toSlide(2)" class="hover-shadow preview" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="content">
+                <img src="thumnails/2a Rotondas en Santa Brigida. Las Palmas de Gran Canaria. MArzo 2021-thumnail.jpg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="content">
+                <img src="thumnails/3 parque publico en Las Alvarizas, Marbella. Sep 2009-thumnail.jpg" onclick="openLightbox();toSlide(4)" class="hover-shadow preview" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="content">
+                <img src="thumnails/4 Embellecimiento playas de Fuengirola. nov 2008-thumnail.jpg" onclick="openLightbox();toSlide(5)" class="hover-shadow preview" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="content">
+                <img src="thumnails/5 concurso parque publico Valdebebas-thumnail.jpg" onclick="openLightbox();toSlide(6)" class="hover-shadow preview" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="content">
+                <img src="thumnails/6 Paisajismo en centro comercial El Mirador. Las Palmas de Gran Canaria. Dic 2009-thumnail.jpg" onclick="openLightbox();toSlide(7)" class="hover-shadow preview" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="content">
+                <img src="thumnails/6a Accesos y aparcamiento en Tamaraceite. Las Palmas de Gran Canaria mayo 2019-thumnail.jpg" onclick="openLightbox();toSlide(8)" class="hover-shadow preview" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="content">
+                <img src="thumnails/7 Plaza Pública Marbella. Agosto 2009-thumnail.jpg" onclick="openLightbox();toSlide(9)" class="hover-shadow preview" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="content">
+                <img src="thumnails/9 Complejo Residencial Mijas. Dic 2006-thumnail.jpg" onclick="openLightbox();toSlide(10)" class="hover-shadow preview" />
+            </div>
+        </div>
+
+    </div>
+    <div id="Lightbox" class="modal">
+        <span class="close pointer" onclick="closeLightbox()">&times;</span>
+        <div class="modal-content">
+            <div class="slide">
+                <img src="1intervencion_paisajistica_en_zona_residencial_el_polvorín_las_palmas_de_gran_canaria._octubre_2010.jpg" class="image-slide" />
+            </div>
+            <div class="slide">
+                <img src="2_plantacion_en_bulevar_mesa_y_lopez._las_palmas_de_gran_canaria._marzo_2021.jpg" class="image-slide" />
+            </div>
+            <div class="slide">
+                <img src="2a_rotondas_en_santa_brigida._las_palmas_de_gran_canaria._marzo_2021.jpg" class="image-slide" />
+            </div>
+            <div class="slide">
+                <img src="3_parque_publico_en_las_alvarizas_marbella._sep_2009.jpg" class="image-slide" />
+            </div>
+            <div class="slide">
+                <img src="4_embellecimiento_playas_de_fuengirola._nov_2008.jpg" class="image-slide" />
+            </div>
+            <div class="slide">
+                <img src="5_concurso_parque_publico_valdebebas.jpg" class="image-slide" />
+            </div>
+            <div class="slide">
+                <img src="6_paisajismo_en_centro_comercial_el_mirador._las_palmas_de_gran_canaria._dic_2009.jpg" class="image-slide" />
+            </div>
+            <div class="slide">
+                <img src="6a_accesos_y_aparcamiento_en_tamaraceite._las_palmas_de_gran_canaria_mayo_2019._.jpg" class="image-slide" />
+            </div>
+            <div class="slide">
+                <img src="7_plaza_pública_marbella._agosto_2009.jpg" class="image-slide" />
+            </div>
+            <div class="slide">
+                <img src="9_complejo_residencial_mijas._dic_2006.jpg" class="image-slide" />
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</body>
+
+</html>
+
+</html>
