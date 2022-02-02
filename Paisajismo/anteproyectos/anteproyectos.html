@@ -45,7 +45,9 @@
             vertical-align: top;
             background-color: rgba(255, 255, 255, 0.7);
             padding: 10px;
-            height: 50vh;
+            height: auto;
+
+            
         }
 
         .seccion-container {
@@ -57,23 +59,35 @@
 
         img {
             max-width:100%;
-            max-height: 35vh;
+            height: 35vh;
             margin: 0 0;
             width: 100%;
 
         }
 
         p {
-            margin: 0 auto;
+            margin-bottom: 1vh;
             width: auto;
+            height: 5vh;
+            margin-bottom: 2vh;
         }
 
         .boton_termiada {
             background-color: rgba(201, 201, 201, 0.7);
             padding: 1vw;
             width: 70%;
-            margin: auto auto auto auto;
+            margin: auto;
+            transition-property: background-color;
+            transition-duration: 1s;
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            line-height: 100%;
+            
         }
+
+        .boton_termiada:hover {
+            background-color: rgba(100, 100, 100, 0.5);
+        }
+
     </style>
 
 
@@ -89,7 +103,6 @@
             <div class="seccion">
                 <img  src="thumnails/1intervencion_paisajistica_en_zona_residencial_el_polvorín_las_palmas_de_gran_canaria._octubre_2010-thumnail.jpg" >
                 <p class="titulo">Paisajismo en zona residencial El Polvorín, Las Palmas de Gran Canaria.</p>
-                <a href=""><div class="boton_termiada">Jardin terminado</div></a>
             </div>
         </div>
     </a>
@@ -99,8 +112,6 @@
             <div class="seccion">
                 <img  src="thumnails/2_plantacion_en_bulevar_mesa_y_lopez._las_palmas_de_gran_canaria._marzo_2021-thumnail.jpg" >
                 <p class="titulo">Plantación en Bulevar Mesa y Lopez. Las Palmas de Gran Canaria.</p>
-                <div class="boton_termiada"><a href="">Jardin terminado</a></div>
-            
             </div>
         </div>
     </a>
@@ -110,8 +121,6 @@
             <div class="seccion">
                 <img  src="thumnails/2a_rotondas_en_santa_brigida._las_palmas_de_gran_canaria._marzo_2021-thumnail.jpg" >
                 <p class="titulo">Rotondas en Santa Brígida. Las Palmas de Gran Canaria.</p>
-                <div class="boton_termiada"><a href="">Jardin terminado</a></div>
-            
             </div>
         </div>
     </a>
@@ -121,8 +130,6 @@
             <div class="seccion">
                 <img  src="thumnails/3_parque_publico_en_las_alvarizas_marbella._sep_2009-thumnail.jpg" >
                 <p class="titulo">Parque publico. Las Alvarizas, Marbella.</p>
-                <div class="boton_termiada"><a href="">Jardin terminado</a></div>
-            
             </div>
         </div>
     </a>
@@ -132,8 +139,6 @@
             <div class="seccion">
                 <img  src="thumnails/4_embellecimiento_playas_de_fuengirola._nov_2008-thumnail.jpg" >
                 <p class="titulo">Ganador concurso embellecimiento playas de Fuengirola.</p>
-                <div class="boton_termiada"><a href="">Jardin terminado</a></div>
-            
             </div>
         </div>
     </a>
@@ -143,8 +148,6 @@
             <div class="seccion">
                 <img  src="thumnails/5_concurso_parque_publico_valdebebas-thumnail.jpg" >
                 <p class="titulo">Concurso Parque público. Valdebebas</p>
-                <div class="boton_termiada"><a href="">Jardin terminado</a></div>
-            
             </div>
         </div>
     </a>
@@ -154,8 +157,6 @@
             <div class="seccion">
                 <img  src="thumnails/6_paisajismo_en_centro_comercial_el_mirador._las_palmas_de_gran_canaria._dic_2009-thumnail.jpg" >
                 <p class="titulo">Paisajismo en centro comercial El Mirador. Las Palmas de Gran Canaria.</p>
-                <div class="boton_termiada"><a href="">Jardin terminado</a></div>
-            
             </div>
         </div>
     </a>
@@ -165,8 +166,6 @@
             <div class="seccion">
                 <img  src="thumnails/6a_accesos_y_aparcamiento_en_tamaraceite._las_palmas_de_gran_canaria_mayo_2019-thumnail.jpg" >
                 <p class="titulo">Accesos y aparcamiento en Tamaraceite. Las Palmas de Gran Canaria</p>
-                <div class="boton_termiada"><a href="">Jardin terminado</a></div>
-            
             </div>
         </div>
     </a>
@@ -176,8 +175,6 @@
             <div class="seccion">
                 <img  src="thumnails/7_plaza_pública_marbella._agosto_2009-thumnail.jpg" >
                 <p class="titulo">Plaza pública Marbella.</p>
-                <div class="boton_termiada"><a href="">Jardin terminado</a></div>
-            
             </div>
         </div>
     </a>
@@ -187,8 +184,6 @@
             <div class="seccion">
                 <img  src="thumnails/9_complejo_residencial_mijas._dic_2006-thumnail.jpg" >
                 <p class="titulo">Complejo Residencial Mijas.</p>
-                <div class="boton_termiada"><a href="">Jardin terminado</a></div>
-            
             </div>
         </div>
     </a>
@@ -198,8 +193,7 @@
             <div class="seccion">
                 <img  src="thumnails/10_el_embrujo_banus._2006-thumnail.jpg" >
                 <p class="titulo">El Embrujo Banús. Marbella</p>
-                <div class="boton_termiada"><a href="">Jardin terminado</a></div>
-            
+                <a href=""><div class="boton_termiada">Obra terminado</div></a>
             </div>
         </div>
     </a>
@@ -209,8 +203,6 @@
             <div class="seccion">
                 <img  src="thumnails/11_casares_golf_garden_marzo_2006-thumnail.jpg" >
                 <p class="titulo">Casares Golf Garden. Casares</p>
-                <div class="boton_termiada"><a href="">Jardin terminado</a></div>
-            
             </div>
         </div>
     </a>
@@ -220,8 +212,6 @@
             <div class="seccion">
                 <img  src="thumnails/12_finca_agricola_arucas._las_palmas_de_gran_canaria._feb_2020-thumnail.jpg" >
                 <p class="titulo">Finca agricola Arucas. Las Palmas de Gran Canaria.</p>
-                <div class="boton_termiada"><a href="">Jardin terminado</a></div>
-            
             </div>
         </div>
     </a>
@@ -231,8 +221,6 @@
             <div class="seccion">
                 <img  src="thumnails/13_vivienda_unifamiliar._camerún_2016-thumnail.jpg" >
                 <p class="titulo">Vivienda Unifamiliar. Camerún</p>
-                <div class="boton_termiada"><a href="">Jardin terminado</a></div>
-            
             </div>
         </div>
     </a>
@@ -243,8 +231,7 @@
             <div class="seccion">
                 <img  src="thumnails/14_vivienda_unifamiliar._marbella._nov_2005-thumnail.jpg" >
                 <p class="titulo">Vivienda unifamiliar. Marbella</p>
-                <div class="boton_termiada"><a href="">Jardin terminado</a></div>
-            
+                <a href=""><div class="boton_termiada">Obra terminado</div></a>
             </div>
         </div>
     </a>
