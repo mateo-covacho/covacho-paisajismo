@@ -3,32 +3,28 @@
 }
 
 a {
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 a:visited {
-    text-decoration: none; 
-
+    text-decoration: none;
 }
 
 body {
     background-image: url(../img/other/SELLOCOVACHO-1.png);
 
-
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .spread {
     height: 5vh;
 }
 
 a {
-    color: black  ;
+    color: black;
 }
 
 a:visited {
-    color: black ;
+    color: black;
 }
 
 .title_container {
@@ -40,23 +36,20 @@ a:visited {
 }
 
 .titulo_edu {
-    float:center;
-    font-size:4em;
+    float: center;
+    font-size: 4em;
 }
-
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .boton_Obra-Terminada_container {
     background: rgba(255, 255, 255, 0.7);
     text-align: right;
-    position:flex;
+    position: flex;
     float: left;
     width: 40vw;
     padding-right: 5vw;
     height: auto;
-
-    
 }
 
 .texto_boton {
@@ -73,7 +66,7 @@ a:visited {
     display: none;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.7);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     text-align: center;
     float: right;
     height: 15vw;
@@ -81,15 +74,15 @@ a:visited {
     height: auto;
     left: 30vw;
     width: auto;
-
-
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-.ante-projectos, .Obra-Terminada, .quien-soy{
+.ante-projectos,
+.Obra-Terminada,
+.quien-soy {
     height: 33%;
     background-color: rgba(255, 255, 255, 0.7);
     display: block;
@@ -100,10 +93,11 @@ a:visited {
     transition-property: background-color;
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-
 }
 
-.ante-projectos:hover, .Obra-Terminada:hover, .quien-soy:hover {
+.ante-projectos:hover,
+.Obra-Terminada:hover,
+.quien-soy:hover {
     cursor: pointer;
     background-color: rgba(201, 201, 201, 0.7);
 }
@@ -114,29 +108,27 @@ a:visited {
     padding-right: 2vw;
 }
 
-.ante-projectos:hover .texto_boton_dropdown, .Obra-Terminada:hover .texto_boton_dropdown, .quien-soy:hover .texto_boton_dropdown {
+.ante-projectos:hover .texto_boton_dropdown,
+.Obra-Terminada:hover .texto_boton_dropdown,
+.quien-soy:hover .texto_boton_dropdown {
     font-weight: 300;
-    
 }
 /*------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-
 
 .boton_microjardines {
     background-color: rgba(255, 255, 255, 0.7);
     text-align: left;
-    position:flex;
+    position: flex;
     float: right;
     width: 40vw;
     padding-left: 5vw;
-
 }
 
-.dropdown2-content{
+.dropdown2-content {
     display: none;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.7);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     text-align: center;
     float: left;
     height: 15vw;
@@ -144,14 +136,14 @@ a:visited {
     height: auto;
     right: 30vw;
     width: auto;
-
 }
 
 .dropdown2:hover .dropdown2-content {
     display: block;
 }
 
-.proceso, .catalogo {
+.proceso,
+.catalogo {
     height: 33%;
     background-color: rgba(255, 255, 255, 0.7);
     display: block;
@@ -162,10 +154,10 @@ a:visited {
     transition-property: background-color;
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-
 }
 
-.proceso:hover, .catalogo:hover {
+.proceso:hover,
+.catalogo:hover {
     cursor: pointer;
     background-color: rgba(201, 201, 201, 0.7);
 }
@@ -176,19 +168,16 @@ a:visited {
     padding-right: 3vw;
 }
 
-
-.proceso:hover .texto_boton_dropdown_2, .catalogo:hover .texto_boton_dropdown_2{
-
+.proceso:hover .texto_boton_dropdown_2,
+.catalogo:hover .texto_boton_dropdown_2 {
     font-weight: 300;
-
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-.spread-2{
+.spread-2 {
     height: 20vh;
 }
-
 
 .barra-redes {
     background: rgba(255, 255, 255, 0.7);
@@ -198,6 +187,7 @@ a:visited {
     height: 5vh;
     line-height: 5vh;
     margin-top: 45vh;
+    height: auto;
 }
 
 .emails {
@@ -207,8 +197,7 @@ a:visited {
     width: 40%;
     text-align: left;
     padding-left: 10%;
-
-
+    font-size: max(1vw, 11px);
 }
 .telf {
     float: right;
@@ -217,7 +206,7 @@ a:visited {
     width: 40%;
     text-align: right;
     padding-right: 10%;
-  
+    font-size: max(1vw, 11px);
 }
 
 .contact-info {
